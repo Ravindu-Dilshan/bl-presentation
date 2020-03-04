@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.4.3 (RELEASE-2.4.3-ad3323c; 2019-01-21T17:46:06+0000) JAXWS-RI/2.3.2 JAXWS-API/2.3.2 JAXB-RI/2.3.2 JAXB-API/2.3.2 git-revision#unknown. --><xs:schema xmlns:tns="http://classes/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://classes/">
+
+<xs:complexType name="product">
+<xs:sequence>
+<xs:element name="category" type="tns:category" minOccurs="0"/>
+<xs:element name="discription" type="xs:string" minOccurs="0"/>
+<xs:element name="image" type="xs:string" minOccurs="0"/>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+<xs:element name="price" type="xs:string" minOccurs="0"/>
+<xs:element name="productID" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="category">
+<xs:sequence>
+<xs:element name="categoryID" type="xs:string" minOccurs="0"/>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="sale">
+<xs:sequence>
+<xs:element name="amount" type="xs:string" minOccurs="0"/>
+<xs:element name="date" type="xs:string" minOccurs="0"/>
+<xs:element name="paymentType" type="xs:string" minOccurs="0"/>
+<xs:element name="saleID" type="xs:string" minOccurs="0"/>
+<xs:element name="user" type="tns:user" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="user">
+<xs:sequence>
+<xs:element name="email" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+<xs:element name="type" type="xs:string" minOccurs="0"/>
+<xs:element name="userID" type="xs:string" minOccurs="0"/>
+<xs:element name="fName" type="xs:string" minOccurs="0"/>
+<xs:element name="lName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="vendor">
+<xs:complexContent>
+<xs:extension base="tns:user">
+<xs:sequence>
+<xs:element name="address" type="xs:string" minOccurs="0"/>
+<xs:element name="company" type="xs:string" minOccurs="0"/>
+<xs:element name="telephone" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="order">
+<xs:sequence>
+<xs:element name="amount" type="xs:string" minOccurs="0"/>
+<xs:element name="date" type="xs:string" minOccurs="0"/>
+<xs:element name="orderID" type="xs:string" minOccurs="0"/>
+<xs:element name="status" type="xs:string" minOccurs="0"/>
+<xs:element name="vendor" type="tns:vendor" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="item">
+<xs:sequence>
+<xs:element name="quantity" type="xs:string" minOccurs="0"/>
+<xs:element name="refID" type="xs:string" minOccurs="0"/>
+<xs:element name="stock" type="tns:stock" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="stock">
+<xs:sequence>
+<xs:element name="lastUpdate" type="xs:string" minOccurs="0"/>
+<xs:element name="product" type="tns:product" minOccurs="0"/>
+<xs:element name="quantity" type="xs:string" minOccurs="0"/>
+<xs:element name="stockID" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
