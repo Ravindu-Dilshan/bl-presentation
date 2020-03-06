@@ -3,4 +3,7 @@
     <system systemId="http://localhost:8080/BussinessTier/BussinessService?wsdl" uri="wsdl/localhost_8080/BussinessTier/BussinessService.wsdl"/>
     <system systemId="http://localhost:8080/BussinessTier/BussinessService?xsd=1" uri="wsdl/localhost_8080/BussinessTier/BussinessService.xsd_1.xsd"/>
     <system systemId="http://localhost:8080/BussinessTier/BussinessService?xsd=2" uri="wsdl/localhost_8080/BussinessTier/BussinessService.xsd_2.xsd"/>
+    <system systemId="http://bl-bussiness.herokuapp.com/BussinessService?wsdl" uri="wsdl/bl-bussiness.herokuapp.com/BussinessService.wsdl"/>
+    <system systemId="http://bl-bussiness.herokuapp.com:80/BussinessService?xsd=2" uri="wsdl/bl-bussiness.herokuapp.com_80/BussinessService.xsd_2.xsd"/>
+    <system systemId="http://bl-bussiness.herokuapp.com:80/BussinessService?xsd=1" uri="wsdl/bl-bussiness.herokuapp.com_80/BussinessService.xsd_1.xsd"/>
 </catalog>
