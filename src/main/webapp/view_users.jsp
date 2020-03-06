@@ -8,8 +8,8 @@
 <%@page import="com.mycompany.presentationtier.UserSession"%>
 <%@page import="java.util.List"%>
 <%@page import="classes.User"%>
-<%@page import="com.mycompany.bussinesstier.BussinessService"%>
-<%@page import="com.mycompany.bussinesstier.BussinessService_Service"%>
+<%@page import="com.mycompany.bussinesstier2.BussinessService"%>
+<%@page import="com.mycompany.bussinesstier2.BussinessService_Service"%>
 <%@page import="com.mycompany.presentationtier.UserLogin"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>

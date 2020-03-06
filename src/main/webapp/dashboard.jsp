@@ -5,7 +5,7 @@
 --%>
 <%@page import="com.mycompany.presentationtier.BussinessServiceProxy"%>
 <%@page import="classes.Category"%>
-<%@page import="com.mycompany.bussinesstier.BussinessService"%>
+<%@page import="com.mycompany.bussinesstier2.BussinessService"%>
 <%@page import="com.mycompany.presentationtier.GetUserSession"%>
 <%@page import="com.mycompany.presentationtier.UserSession"%>
 <%@page import="com.mycompany.presentationtier.UserLogin"%>

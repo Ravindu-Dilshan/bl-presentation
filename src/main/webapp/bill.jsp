@@ -8,7 +8,7 @@
 <%@page import="java.util.List"%>
 <%@page import="classes.Sale"%>
 <%@page import="com.mycompany.presentationtier.BussinessServiceProxy"%>
-<%@page import="com.mycompany.bussinesstier.BussinessService"%>
+<%@page import="com.mycompany.bussinesstier2.BussinessService"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 

@@ -12,8 +12,8 @@
 <%@page import="classes.Category"%>
 <%@page import="classes.Product"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="com.mycompany.bussinesstier.BussinessService"%>
-<%@page import="com.mycompany.bussinesstier.BussinessService_Service"%>
+<%@page import="com.mycompany.bussinesstier2.BussinessService"%>
+<%@page import="com.mycompany.bussinesstier2.BussinessService_Service"%>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>

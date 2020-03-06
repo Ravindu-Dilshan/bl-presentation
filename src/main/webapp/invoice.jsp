@@ -10,8 +10,8 @@
 <%@page import="com.mycompany.presentationtier.BussinessServiceProxy"%>
 <%@page import="java.util.List"%>
 <%@page import="classes.Product"%>
-<%@page import="com.mycompany.bussinesstier.BussinessService"%>
-<%@page import="com.mycompany.bussinesstier.BussinessService_Service"%>
+<%@page import="com.mycompany.bussinesstier2.BussinessService"%>
+<%@page import="com.mycompany.bussinesstier2.BussinessService_Service"%>
 <!DOCTYPE html>
 
 <html>
