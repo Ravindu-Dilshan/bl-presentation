@@ -8,7 +8,7 @@ package com.mycompany.presentationtier;
 import classes.Item;
 import classes.Order;
 import classes.Vendor;
-import com.mycompany.bussinesstier.BussinessService;
+import com.mycompany.bussinesstier2.BussinessService;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;

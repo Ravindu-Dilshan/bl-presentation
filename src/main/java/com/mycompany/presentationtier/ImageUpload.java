@@ -5,7 +5,7 @@
  */
 package com.mycompany.presentationtier;
 
-import com.mycompany.bussinesstier.BussinessService;
+import com.mycompany.bussinesstier2.BussinessService;
 import java.io.DataInputStream;
 import java.io.File;
 import java.io.FileOutputStream;

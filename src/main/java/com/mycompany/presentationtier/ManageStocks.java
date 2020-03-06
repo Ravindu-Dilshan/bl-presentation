@@ -7,7 +7,7 @@ package com.mycompany.presentationtier;
 
 import classes.Product;
 import classes.Stock;
-import com.mycompany.bussinesstier.BussinessService;
+import com.mycompany.bussinesstier2.BussinessService;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;

@@ -5,8 +5,8 @@
  */
 package com.mycompany.presentationtier;
 
-import com.mycompany.bussinesstier.BussinessService;
-import com.mycompany.bussinesstier.BussinessService_Service;
+import com.mycompany.bussinesstier2.BussinessService;
+import com.mycompany.bussinesstier2.BussinessService_Service;
 
 /**
  *
