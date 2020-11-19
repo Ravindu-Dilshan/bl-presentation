@@ -87,6 +87,7 @@
             </div><!--loginboxinner-->
             <div class="footer">
                 <p>Black Lotus Cakes © 2020. All Rights Reserved.</p>
+                <p>This Webiste is not Commercial !!!! Developed for demo puposes only || Created on 2019</p>
             </div>
         </div><!--loginbox-->
 
