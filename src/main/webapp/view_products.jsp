@@ -7,8 +7,8 @@
 <%@page import="com.mycompany.presentationtier.BussinessServiceProxy"%>
 <%@page import="java.util.List"%>
 <%@page import="classes.Product"%>
-<%@page import="com.mycompany.bussinesstier2.BussinessService"%>
-<%@page import="com.mycompany.bussinesstier2.BussinessService_Service"%>
+<%@page import="com.mycompany.bussinesstier.BussinessService"%>
+<%@page import="com.mycompany.bussinesstier.BussinessService_Service"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -91,7 +91,8 @@
                                                             + "<td class='justify'>" + p.getDiscription() + "</td>"
                                                             + "<td class='center'>" + p.getPrice() + ".00</td>"
                                                             + "<td class='center'><a href='" + p.getImage() + "' target='_blank'>"
-                                                            + "<img width='70' src='" + p.getImage() + "'/></a></td>"
+                                                            + "<img width='70' onerror='if (this.src != \"images/products/a.jpg\") this.src = \"images/products/a.jpg\";'"
+                                                            + "src='" + p.getImage() + "'/></a></td>"
                                                             + "<td class='center'>" + p.getCategory().getName() + "</td>"
                                                             + "<td align='center'> <span><a href='manage_products.jsp?task=update&pid=" + p.getProductID() + "' target='_blank' "
                                                             + "class='btn btn2 btn_book'><span>Update</span></a></span></td>"
@@ -108,7 +109,8 @@
                                                         + "<td class='justify'>" + p.getDiscription() + "</td>"
                                                         + "<td class='center'>" + p.getPrice() + ".00</td>"
                                                         + "<td class='center'><a href='" + p.getImage() + "' target='_blank'>"
-                                                        + "<img width='70' src='" + p.getImage() + "'/></a></td>"
+                                                        + "<img width='70' onerror='if (this.src != \"images/products/a.jpg\") this.src = \"images/products/a.jpg\";'"
+                                                        + " src='" + p.getImage() + "'/></a></td>"
                                                         + "<td class='center'>" + p.getCategory().getName() + "</td>"
                                                         + "<td align='center'> <span><a href='manage_products.jsp?task=update&pid=" + p.getProductID() + "' target='_blank' "
                                                         + "class='btn btn2 btn_book'><span>Update</span></a></span></td>"

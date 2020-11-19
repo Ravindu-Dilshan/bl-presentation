@@ -9,8 +9,8 @@
 <%@page import="com.mycompany.presentationtier.BussinessServiceProxy"%>
 <%@page import="java.util.List"%>
 <%@page import="classes.Product"%>
-<%@page import="com.mycompany.bussinesstier2.BussinessService"%>
-<%@page import="com.mycompany.bussinesstier2.BussinessService_Service"%>
+<%@page import="com.mycompany.bussinesstier.BussinessService"%>
+<%@page import="com.mycompany.bussinesstier.BussinessService_Service"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -66,7 +66,7 @@
                         <div class="one_fourth widgetcontent">
                             <div class="widgetbox uncollapsible">
                                 <div class="widgetcontent">
-                                    <img src="<%out.println(s.getProduct().getImage());%>" class="cardimg" alt="Product Image"/>
+                                    <img onerror='if (this.src != "images/products/a.jpg") this.src = "images/products/a.jpg";' src="<%out.println(s.getProduct().getImage());%>" class="cardimg" alt="Product Image"/>
                                     <div><h2 class="general"><span><%out.println(s.getProduct().getName());%></span>
                                         </h2><h4><%out.println(s.getLastUpdate());%></h4></div>
                                     <p style="height: 50px;overflow: auto;"><%out.println(s.getProduct().getDiscription());%></p>
@@ -90,7 +90,7 @@
                         <div class="one_fourth widgetcontent">
                             <div class="widgetbox uncollapsible">
                                 <div class="widgetcontent">
-                                    <img src="<%out.println(s.getProduct().getImage());%>" class="cardimg" alt="product Image"/>
+                                    <img onerror='if (this.src != "images/products/a.jpg") this.src = "images/products/a.jpg";' src="<%out.println(s.getProduct().getImage());%>" class="cardimg" alt="product Image"/>
                                     <div><h2 class="general"><span><%out.println(s.getProduct().getName());%></span></h2>
                                         <h4><%out.println(s.getLastUpdate());%></h4></div>
                                     <p style="height: 50px;overflow: auto;"><%out.println(s.getProduct().getDiscription());%></p>

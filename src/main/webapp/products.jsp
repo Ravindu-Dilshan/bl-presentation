@@ -9,8 +9,8 @@
 <%@page import="com.mycompany.presentationtier.BussinessServiceProxy"%>
 <%@page import="java.util.List"%>
 <%@page import="classes.Product"%>
-<%@page import="com.mycompany.bussinesstier2.BussinessService"%>
-<%@page import="com.mycompany.bussinesstier2.BussinessService_Service"%>
+<%@page import="com.mycompany.bussinesstier.BussinessService"%>
+<%@page import="com.mycompany.bussinesstier.BussinessService_Service"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -65,7 +65,7 @@
                         <div class="one_fourth widgetcontent">
                             <div class="widgetbox uncollapsible">
                                 <div class="widgetcontent">
-                                    <img src="<%out.println(p.getImage());%>" class="cardimg" alt="Product Image"/>
+                                    <img onerror='if (this.src != "images/products/a.jpg") this.src = "images/products/a.jpg";' src="<%out.println(p.getImage());%>" class="cardimg" alt="Product Image"/>
                                     <div><h2 class="general"><span><%out.println(p.getName());%></span></h2></div>
                                     <p style="height: 60px;overflow: hidden;"><%out.println(p.getDiscription());%></p>
                                     <span><h1>Rs.<%out.println(p.getPrice());%></h1></span>
@@ -83,7 +83,7 @@
                         <div class="one_fourth widgetcontent">
                             <div class="widgetbox uncollapsible" style="text-align: center;">
                                 <div class="widgetcontent">
-                                    <img src="<%out.println(p.getImage());%>" class="cardimg" alt="product Image"/>
+                                    <img onerror='if (this.src != "images/products/a.jpg") this.src = "images/products/a.jpg";' src="<%out.println(p.getImage());%>" class="cardimg" alt="product Image"/>
                                     <div><h2 class="general"><span><%out.println(p.getName());%></span></h2></div>
                                     <div><h4 class="general"><span><%out.println(p.getCategory().getName());%></span></h4></div>
                                     <span><h1>Rs.<%out.println(p.getPrice());%></h1></span>

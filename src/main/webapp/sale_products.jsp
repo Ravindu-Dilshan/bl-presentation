@@ -8,8 +8,8 @@
 <%@page import="classes.Stock"%>
 <%@page import="java.util.List"%>
 <%@page import="classes.Product"%>
-<%@page import="com.mycompany.bussinesstier2.BussinessService"%>
-<%@page import="com.mycompany.bussinesstier2.BussinessService_Service"%>
+<%@page import="com.mycompany.bussinesstier.BussinessService"%>
+<%@page import="com.mycompany.bussinesstier.BussinessService_Service"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -88,7 +88,8 @@
                                                             + "<td class='center'>" + s.getLastUpdate() + "</td>"
                                                             + "<td class='center'>" + s.getProduct().getName() + "</td>"
                                                             + "<td class='center'><a href='" + s.getProduct().getImage() + "' "
-                                                            + "target='_blank'><img width='70' src='" + s.getProduct().getImage() + "'/></a></td>"
+                                                            + "target='_blank'><img onerror='if (this.src != \"images/products/a.jpg\") this.src = \"images/products/a.jpg\";'"
+                                                            + "width='70' src='" + s.getProduct().getImage() + "'/></a></td>"
                                                             + "<td class='center'>" + Double.parseDouble(s.getProduct().getPrice()) + "</td>"
                                                             + "<td class='center'>" + s.getProduct().getCategory().getName() + "</td>"
                                                             + "<td align='center'> "
@@ -113,7 +114,8 @@
                                                         + "<td class='center'>" + s.getLastUpdate() + "</td>"
                                                         + "<td class='center'>" + s.getProduct().getName() + "</td>"
                                                         + "<td class='center'><a href='" + s.getProduct().getImage() + "' "
-                                                        + "target='_blank'><img width='70' src='" + s.getProduct().getImage() + "'/></a></td>"
+                                                        + "target='_blank'><img onerror='if (this.src != \"images/products/a.jpg\") this.src = \"images/products/a.jpg\";'"
+                                                        + "width='70' src='" + s.getProduct().getImage() + "'/></a></td>"
                                                         + "<td class='center'>" + Double.parseDouble(s.getProduct().getPrice()) + "</td>"
                                                         + "<td class='center'>" + s.getProduct().getCategory().getName() + "</td>"
                                                         + "<td align='center'> "
