@@ -99,6 +99,7 @@
                                         <h3 id="day" class="display-5">Monday, January 01</h3>
                                         <h2 id="greeting">Good Morning</h2><h2><%=name%></h2>
                                     <h3>What would you like to do today?</h3>
+                                    <p>This Webiste is not Commercial !!!! Developed for demo puposes only || Created on 2019</p>
                                 </div><!-- /.col -->
 
                             </div><!-- /.row -->         
@@ -109,6 +110,7 @@
                     </div><!--maincontent-->
                     <div class="footer">
                         <p>Black Lotus Cakes © 2020. All Rights Reserved.</p>
+                        <p>This Webiste is not Commercial !!!! Developed for demo puposes only || Created on 2019</p>
                     </div>
                 </div><!--mainwrapperinner-->
             </div><!--mainwrapper-->
